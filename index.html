@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Monster Hunter World</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #2e2d2a;
+  color: #e8e6e3;
+  margin: 0;
+}
+
+header, nav, main, footer {
+  padding: 1rem;
+}
+
+header {
+  background-color: #3c3b37;
+}
+
+nav {
+  background-color: #2e2d2a;
+}
+nav a {
+  color: #c6ffb3; 
+  font-weight: bold;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  background-color: #3c3b37;
+}
+
+table, th, td {
+  border: 1px solid #5c5c5c;
+}
+
+th, td {
+  padding: 0.5rem;
+  text-align: left;
+}
+
+form {
+  margin-top: 1rem;
+  background-color: #3c3b37;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0 0.2rem;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 3px;
+  background-color: #2e2d2a;
+  color: #e8e6e3;
+}
+
+button {
+  background-color: #7fbf7f;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: #000;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  background-color: #1f1f1c;
+}
+
+img {
+  max-width: 100%;
+  width: 400px;
+  height: auto;
+  border-radius: 5px;
+  display: block;
+  margin: 1rem auto;
+}
+
+#logoutBtn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: #b30000;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+#logoutBtn:hover {
+  background-color: #990000;
+}
+
+
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Monster Hunter World</h1>
+  </header>
+
+  <button id="logoutBtn">Cerrar sesión</button>
+
+  <nav aria-label="Main navigation">
+    <a href="https://monsterhunter.fandom.com/wiki/MHW:_Monsters">Monsters</a>
+    <a href="https://monsterhunter.fandom.com/wiki/MHW:_Weapons">Weapons</a>
+    
+  </nav>
+
+  <main>
+    <section aria-labelledby="monsters">
+      <h2 id="monsters">Featured Monsters</h2>
+      <img src="images/Rajang.png" alt="Rajang, a powerful fanged beast from Monster Hunter World" width="400">
+      <img src="images/Rathalos.webp" alt="Rathalos, the king of the skies from Monster Hunter World" width="400">
+      <img src="images/Barioth.webp" alt="Barioth, apex predator of the snow from Monster Hunter World" width="400">
+
+    </section>
+
+    <section aria-labelledby="weapons">
+      <h2 id="weapons">Top Weapons</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Icon</th>
+            <th>Weapon</th>
+            <th>Type</th>
+            <th>Element</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="images/greatsword icon.png" alt="Un arma de gran tamaño y poder destructivo. Su estilo de combate se basa en cargar ataques pesados que pueden causar daño masivo, ideal para romper partes de monstruos. Lenta pero letal."  sytle="width: 32px; height:32px"></td>
+            <td>Great Sword</td>
+            <td>Melee</td>
+            <td>None</td>
+          </tr>
+          <tr>
+            <td><img src="images/long sword.png" alt="Elegante y de largo alcance, esta espada permite realizar combos rápidos y precisos. Su medidor de espíritu mejora los ataques conforme se llena. Ideal para jugadores ofensivos y ágiles." sytle="width: 32px; height:32px"></td>
+            <td>Long Sword</td>
+            <td>Melee</td>
+            <td>Dragon</td>
+          </tr>
+          <tr>
+            <td><img src="images/sword and shield icon.png" alt="Una de las armas más equilibradas. Permite atacar con rapidez mientras se bloquea con el escudo. También puedes usar objetos sin guardar el arma, lo que la hace ideal para principiantes y apoyo." sytle="width: 32px; height:32px"></td>
+            <td>Sword and Shield</td>
+            <td>Melee</td>
+            <td>Poison</td>
+          </tr>
+          <tr>
+            <td><img src="images/dual blades.png" alt="Armas gemelas extremadamente rápidas. Permiten entrar en modo demoníaco para ejecutar combos a alta velocidad. Perfectas para aplicar estados alterados o daño continuo." sytle="width: 32px; height:32px"></td>
+            <td>Dual Blades</td>
+            <td>Melee</td>
+            <td>Ice</td>
+          </tr>
+          <tr>
+            <td><img src="images/hammer.webp" alt="Gran arma contundente para golpear la cabeza de los monstruos y aturdirlos. Su velocidad es moderada, pero sus ataques cargados son devastadores. No puede bloquear." sytle="width: 32px; height:32px"></td>
+            <td>Hammer</td>
+            <td>Melee</td>
+            <td>Stun</td>
+          </tr>
+          <tr>
+            <td><img src="images/hunting horn icon.webp" alt="Similar al martillo, pero con la habilidad única de tocar melodías para dar buffs al equipo (ataque, defensa, velocidad, etc.). Subestimada, pero crucial en equipo." sytle="width: 32px; height:32px"></td>
+            <td>Hunting Horn</td>
+            <td>Melee</td>
+            <td>Buffs</td>
+          </tr>
+          <tr>
+            <td><img src="images/lance.png" alt="Arma defensiva con el mejor escudo del juego. Su estilo es metódico, con ataques precisos y constantes. Ideal para mantener presión sin exponerse al daño." sytle="width: 32px; height:32px"></td>
+            <td>Lance</td>
+            <td>Melee</td>
+            <td>Water</td>
+          </tr>
+          <tr>
+            <td><img src="images/gun_lance-removebg-preview.png" alt="Una mezcla entre lanza y cañón. Dispara proyectiles explosivos y puede realizar ataques especiales como el Wyvern’s Fire. Más ofensiva que la lanza, pero menos móvil." sytle="width: 32px; height:32px"></td>
+            <td>Gunlance</td>
+            <td>Melee</td>
+            <td>Fire</td>
+          </tr>
+          <tr>
+            <td><img src="images/switch axe.png" alt="Una arma versátil que cambia entre hacha (rápida y móvil) y espada (más poderosa). Requiere buena gestión de energía, pero recompensa con daño alto y estilo." sytle="width: 32px; height:32px"></td>
+            <td>Switch Axe</td>
+            <td>Melee</td>
+            <td>Thunder</td>
+          </tr>
+          <tr>
+            <td><img src="images/charge blade.png" alt="Una de las armas más técnicas. Cambia entre espada + escudo (para cargar energía) y hacha de energía (para liberarla en ataques explosivos). Requiere práctica, pero es extremadamente poderosa." sytle="width: 32px; height:32px"></td>
+            <td>Charge Blade</td>
+            <td>Melee</td>
+            <td>Paralysis</td>
+          </tr>
+          <tr>
+            <td><img src="images/insect glaive.png" alt="Arma ágil que permite realizar saltos y ataques aéreos. Viene acompañada de un Kinsecto que extrae esencias del monstruo para mejorar al cazador. Ideal para combate vertical y movilidad." sytle="width: 32px; height:32px"></td>
+            <td>Insect Glaive</td>
+            <td>Melee</td>
+            <td>Dragon</td>
+          </tr>
+        </tbody>
+      </table>
+            
+    </section>
+
+    <section aria-labelledby="feedback">
+      <h2 id="feedback">Give Us Your Feedback</h2>
+      <form id="feedback-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+      
+        <label for="favorite">Favorite Weapon:</label>
+        <input type="text" id="favorite" name="favorite" />
+      
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4"></textarea>
+      
+        <button type="submit">Submit</button>
+      </form>      
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Monster Hunter Fansite. All rights reserved.</p>
+  </footer>
+  <script>
+    document.getElementById('feedback-form').addEventListener('submit', function(e) {
+      e.preventDefault(); // Evita que se envíe el formulario
+      alert('¡Gracias por tu feedback! Tu información ha sido enviada correctamente.');
+      this.reset(); // Limpia los campos del formulario (opcional)
+    });
+  
+    // Funcionalidad del botón Cerrar Sesión
+    document.getElementById('logoutBtn').addEventListener('click', function () {
+      alert('Sesión cerrada. ¡Hasta la próxima, cazador!');
+      window.location.href = "Home MHW.html"; // Redirige a la página de login
+    });
+  </script>
+  
+  
+</body>
+</html>
